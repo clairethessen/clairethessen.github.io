@@ -12,6 +12,26 @@ color:white;
 #ClaireLogo{
   width: 160px;
   margin-left: 5%;
+  margin-top: -5px;
+}
+
+#MenuBar{
+  width: 500px;
+  position: absolute;
+  top: 15px; right: 42px;
+  z-index: -1;
+  rotate: 10;
+}
+
+#SquareSelect{
+  width:150px;
+  position: absolute;
+  top: -7px; right: 410px;
+  opacity: 0;
+
+  &:hover{
+    opacity: 100;
+  }
 }
 .navbar ul{
   list-style-type: none;
@@ -23,7 +43,7 @@ color:white;
 .navbar a{
   color:white;
   text-decoration: none;
-  padding:15px;
+  padding:12px;
   display: block;
   text-align: center;
   &:hover{
@@ -36,6 +56,7 @@ color:white;
   margin-top: 5%;
   margin-right: 5%;
 }
+
 
 .logoContainer{
   height: 500px;
@@ -54,56 +75,4 @@ color:white;
 .galleryHeader{
   text-align: center;
   font-size: 30px;
-}
-.gallery{
-  width:900px;
-  display:flex;
-  overflow-x: scroll;
-}
-
-.gallery div{
-  width:100%;
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: repeat(3,1fr);
-  grid-gap:20px;
-  padding:10px;
-  flex:none;
-}
-
-.gallery div img{
-  width:100%;
-  transition: transform 0.5s;
-
-  &:hover{
-    cursor: pointer;
-    filter: brightness(120%);
-    transform:scale(1.1);
-  }
-  
-}
-
-.gallery::-webkit-scrollbar{
-  display: none;
-}
-
-.gallery-wrap{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin:10% auto;
-  margin-top: 20px;
-  margin-right: 3%;
-}
-
-#nextBtn{
-  width: 50px;
-  cursor:pointer;
-  margin:40px;
-}
-
-#backBtn{
-  width: 70px;
-  cursor:pointer;
-  margin:40px;
 }

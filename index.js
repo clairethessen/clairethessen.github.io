@@ -1,18 +1,16 @@
-let scrollContainer = document.querySelector(".gallery");
-let backBtn = document.getElementById("backBtn");
-let nextBtn = document.getElementById("nextBtn");
+const gallery=document.querySelector(".gallery");
+const backButton=document.querySelector('[data-js="backButton"]');
+const forwardButton=document.querySelector('[data-js="forwardButton"]');
 
-scrollContainer.addEventListener("wheel",(evt)=>{
-    evt.preventDefault();
-    scrollContainer.scrollLeft+= evt.deltaY;
-});
 
-nextBtn.addEventListener("click",()=>{
-    scrollContainer.scrollLeft+=900;
-});
+if(gallery){
+    $(gallery).slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        centerMode:true,
+        prevArrow:$(backButton),
+        nextArrow:$(forwardButton),
+    });
+}
 
-backBtn.addEventListener("click",()=>{
-    scrollContainer.scrollLeft-=900;
-});
-
-console.log(document);

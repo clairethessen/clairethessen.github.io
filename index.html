@@ -9,18 +9,20 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+		<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>		
 
 	</head>
 	<body>
 
 		<div class="header">
 			<img id="ClaireLogo" src="./images/ClaireLogoWhite.png" alt="Claire Thessen Logo">
-
+			<img id="MenuBar" src="./images/MenuBlockTurq.png">
+			<img id="SquareSelect" src="./images/GraphicDesignCircle.png">
 			<nav class="navbar">
 				<ul>
-					<li><a href="">Look Development</a></li>
+					<li id="Look_Development_Nav"><a href="">Look Development</a></li>
 					<li><a href="">Graphic Design</a></li>
 					<li><a href="">About</a></li>
 				</ul>
@@ -36,20 +38,19 @@
 
 
 			<div class="gallery-wrap">
-							<span><img id="backBtn" src="./images/backArrow.png"></span>
-
+				<button data-js="backButton">
+					<img src="./images/backArrow.png"/>
+			<button data-js="forwardButton">
+				<img src="./images/nextArrow.png"/>
+	
 				<div class="gallery">
-					<div>
-						<span><img id="sharkSquare" src="./images/sharkSquare.png" alt="3D Model of a Shark Themed Charcuterie Board"></span>
-						<span><img id="fishSquare" src="./images/fishSquare.png" alt="3D Model of a Stylized Singing Wall Fish"></span>
-						<span><img id="vaseSquare" src="./images/vaseSquare.png" alt="3D Model of a Tiffany & Co. Vase"></span>
-						<span><img id="cowboySquare" src="./images/cowboySquare.png" alt="3D Model of cowboy themed low-poly game assets"></span>
-						<span><img id="scorpionSquare" src="./images/scorpionSquare.png" alt="3D render of a steampunk inspire Scorpion"></span>
-						<span><img id="robotSquare" src="./images/robotSquare.png" alt="3D render of a decrepit war robot at the bottom of a lake"></span>
-					</div>
+						<img id="sharkSquare" src="./images/sharkSquare.png" alt="3D Model of a Shark Themed Charcuterie Board">
+						<img id="fishSquare" src="./images/fishSquare.png" alt="3D Model of a Stylized Singing Wall Fish">
+						<img id="vaseSquare" src="./images/vaseSquare.png" alt="3D Model of a Tiffany & Co. Vase">
+						<img id="cowboySquare" src="./images/cowboySquare.png" alt="3D Model of cowboy themed low-poly game assets">
+						<img id="scorpionSquare" src="./images/scorpionSquare.png" alt="3D render of a steampunk inspire Scorpion">
+						<img id="robotSquare" src="./images/robotSquare.png" alt="3D render of a decrepit war robot at the bottom of a lake">
 				</div>
-
-				<span><img id="nextBtn" src="./images/nextArrow.png"></span>
 
 			</div>
 		</div>
