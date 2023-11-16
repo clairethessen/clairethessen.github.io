@@ -76,3 +76,26 @@ color:white;
   text-align: center;
   font-size: 30px;
 }
+
+.gallery-wrap{
+  max-width: 70%;
+  margin:auto;
+  position:relative;
+
+  .buttons{
+    position: absolute;
+    top:50%;
+    left:0;
+    width:120%;
+    display:flex;
+    justify-content: space-between;
+    z-index: 1;
+    transform: translate(-8%,-50%);
+    color:transparent;
+    background-color: transparent;
+    text-decoration: none;
+    border:none;
+  }
+
+}
+

@@ -117,4 +117,56 @@ body {
 .galleryHeader {
   text-align: center;
   font-size: 30px;
+}
+
+.gallery-wrap {
+  max-width: 70%;
+  margin: auto;
+  position: relative;
+}
+.gallery-wrap .buttons {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 120%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  transform: translate(-8%, -50%);
+  color: transparent;
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+}
+
+@media only screen and (min-width: 501px) {
+  .hamburger {
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .navButtons.active {
+    top: 0;
+  }
+  .navButtons a {
+    display: block;
+    margin-bottom: 20px;
+    width: 200px;
+  }
+  .hamburger {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    position: relative;
+  }
+  .hamburger span {
+    display: block;
+    width: 100%;
+    background-color: white;
+    height: 5px;
+  }
 }/*# sourceMappingURL=index.css.map */
