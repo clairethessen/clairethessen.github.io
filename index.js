@@ -1,8 +1,7 @@
 const gallery=document.querySelector(".gallery");
 const backButton=document.querySelector('[data-js="backButton"]');
 const forwardButton=document.querySelector('[data-js="forwardButton"]');
-const hamburgerButton=document.querySelector('[data-js="hamburger"]');
-const nav=document.querySelector(".navButtons");
+
 
 if(gallery){
     $(gallery).slick({
@@ -30,7 +29,14 @@ if(backButton){
   });
 }
 
+//NAV CONTROLS
+
+const hamburgerButton=document.querySelector('[data-js="hamburger"]');
+const nav=document.querySelector(".navbar");
+
 hamburgerButton.addEventListener("click",function(){
     nav.classList.toggle("active");
 }
 )
+
+src="https://player.vimeo.com/api/player.js"
