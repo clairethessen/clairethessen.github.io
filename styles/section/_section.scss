@@ -1,0 +1,142 @@
+body {
+  background-color: rgb(18, 18, 18);
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+h1{
+  text-align: center;
+  font-size: 30px;
+}
+.header {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+}
+#ClaireLogo {
+  width: 160px;
+  margin-left: 5%;
+  margin-top: -5px;
+}
+
+#MenuBar {
+  width: 500px;
+  position: absolute;
+  top: 15px;
+  right: 42px;
+  z-index: -1;
+  rotate: 10;
+}
+
+
+.logoContainer {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  margin-left: 30px;
+  z-index: -1;
+}
+
+
+#ClaireBigLogo{
+  position: relative;
+  width: 60%;
+}
+
+#ClaireBigLogoOverlay{
+  width: 60%;
+  position:absolute;
+  z-index: -1;
+  animation: fadeIn 7s;
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+}
+
+.HomeContainer{
+  margin-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -100px;
+}
+
+.HomeButtons{
+  display: flex;
+  gap: 30px;
+  margin-top: -60px;;
+
+  a{
+    font-size: 24px;
+    text-decoration: none;
+    color:white;
+    z-index: 3;
+    position: relative;
+
+    &:hover{
+      color: rgb(153, 216, 210);
+
+    }
+
+  }
+
+}
+
+.DemoReelContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 100px;
+  margin-top:-50px;
+}
+#DemoReelBackground:nth-child(1){
+  transform:scale(130%);
+  margin: auto;
+}
+
+.video:nth-child(2){
+  padding: 56.25% 0 0 0;
+  position: absolute;
+  transform: translate(0px,50px);
+  transform:scale(85%);
+
+  width:60%;
+  z-index: 4;
+
+}
+
+.galleryHeader {
+  text-align: center;
+  font-size: 30px;
+}
+
+.gallery-wrap {
+  max-width: 70%;
+  margin: auto;
+  position: relative;
+
+  .buttons {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 120%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    transform: translate(-8%, -50%);
+    color: transparent;
+    background-color: none;
+    text-decoration: none;
+    border: 0px;
+    background: none;
+    box-shadow: none;
+    outline: none;
+    appearance: none;
+  }
+}
