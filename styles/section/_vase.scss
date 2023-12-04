@@ -1,0 +1,75 @@
+.vase_full_picture{
+    width:80%;
+    margin: auto;
+    margin-bottom: 40px;
+
+    
+    @media only screen and (max-width: 500px) {
+        width: 95%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+
+.vase_parent{
+    display: flex;
+    margin: auto;
+    width: 80%;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    
+    @media only screen and (max-width: 500px) {
+        width: 95%;
+    }
+
+    img{
+        height: 800px;
+
+        
+        @media only screen and (max-width: 500px) {
+            height: 300px;
+        }
+    }
+}
+
+.vase_parent_2{
+    display: flex;
+    width:80%;
+    margin: auto;
+    gap:40px;
+
+    
+    @media only screen and (max-width: 500px) {
+        flex-wrap: wrap;}
+
+    .description{
+        width:50%;
+        align-self: center;
+
+        
+        @media only screen and (max-width: 500px) {
+            width: 90%;
+        }
+
+        p{
+            margin-bottom: 20px;
+
+            
+        @media only screen and (max-width: 500px) {
+            text-align: center;
+        }
+        }
+        
+    }
+
+    img{
+        height: 400px;
+        justify-self: center;
+
+        
+        @media only screen and (max-width: 500px) {
+           display: none;
+        }
+    }
+}
