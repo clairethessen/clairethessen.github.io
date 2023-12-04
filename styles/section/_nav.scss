@@ -1,0 +1,242 @@
+.header{
+    padding-right: 30px;
+    position: relative;
+
+    .__logo{
+      width: 110px;
+      margin-top: 30px;
+      margin-left: 50px;
+      position:relative;
+      z-index: 1;
+
+      @media only screen and (max-width: 500px) {
+        width: 90px;
+        margin-top: 30px;
+        margin-left: 20px;
+      }
+
+
+    }
+    .navbar {
+        display: flex;
+        align-items: flex-start;
+        padding-top: 30px;
+        justify-content:flex-end;
+
+        #home{
+          display: none;
+        }
+        @media only screen and (max-width: 500px) {
+          position: absolute;
+          align-items: center;
+          top: -105vh;
+          left: 0;
+          width: 100%;
+          height:100vh;
+          background-color:rgb(18, 18, 18);
+          justify-content: flex-start;
+          padding: 30px;
+          transition: top .3s ease;
+          z-index: 7;
+
+          #home{
+            display: block;
+          }
+
+          &.active{
+            top: 0px;
+          }
+          ul{
+            flex-direction: column;
+            li{
+
+                a{
+                    text-align: left;
+                    padding: 30px;
+                    font-size: 30px;
+                    text-transform: uppercase;
+
+                  
+                }
+            }
+          }
+        }
+        ul {
+          list-style-type: none;
+          padding: 0px;
+          margin: 0px;
+          overflow: hidden;
+          display: flex;
+        }
+        a {
+          position: relative;
+          color: white;
+          text-decoration: none;
+          padding: 12px;
+          display: block;
+          text-align: center;
+
+          img{
+              width: 100%;
+              height: 100%;
+              position:absolute;
+              top:0;
+              left: 0;
+              display: none;
+          }
+
+
+          &:hover,
+          &:focus {
+            color: rgb(153, 216, 210);
+
+            img{
+              display: block;
+            }
+        
+          }
+        }
+    
+      }
+
+
+    
+    .hamburger {
+        width: 35px;
+        height: 35px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: transparent;
+        position: relative;
+        border: transparent;
+        display: none;
+        align-self: center;
+        justify-self: flex-end;
+
+        @media only screen and (max-width: 500px) {
+            display: flex;
+        }
+    
+        span {
+          display: block;
+          width: 100%;
+          background-color: white;
+          height: 5px;
+        }
+      }
+    
+}
+
+.footer_div{
+  margin-top: 100px;
+}
+
+#footer_3d{
+    display: flex;
+  width: 85%;
+  position: absolute;
+  left: 100px;
+  bottom: -803px;
+  height: 89px;
+
+  @media only screen and (max-width: 500px) {
+    position: absolute;
+    left:0px;
+    width: 90%;
+    bottom: -1871px;
+  }
+}
+
+#footer_vase{
+  display: flex;
+  width: 85%;
+  position: absolute;
+  left: 100px;
+  bottom: -1253px;
+  height: 89px;
+
+  @media only screen and (max-width: 500px) {
+    position: absolute;
+    left:0px;
+    width: 90%;
+    bottom: -200px;
+  }
+}
+
+.footer{
+  display: flex;
+  width: 85%;
+  position: absolute;
+  left: 100px;
+  bottom: -1450px;
+  height: 89px;
+
+  @media only screen and (max-width: 500px) {
+    position: absolute;
+    left:0px;
+    width: 90%;
+    bottom: -720px;
+
+  }
+
+  .footer_container_1{
+    display: flex;
+    width: 70%;
+    align-items: flex-start;
+
+    @media only screen and (max-width: 500px) {
+      display: none;
+    }
+
+  }
+
+  .footer_container_2{
+    @media only screen and (max-width: 500px) {
+      width: 30%;
+    }
+
+  }
+
+  .footer_container_3{
+    display: flex;
+    width: 70%;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    display: flex;
+  }
+  a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    display: block;
+    text-align: center;
+
+    img{
+      width: 100px;
+
+      @media only screen and (max-width: 500px) {
+        width: 100px;
+        height: 70px;
+      }
+    }
+
+  
+  }
+
+  .SCbutton{
+    width: 45px;
+    height: 40px;
+  }
+
+}
+
